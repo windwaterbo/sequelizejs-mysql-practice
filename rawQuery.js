@@ -17,7 +17,7 @@ const getIntIdGap = (table) => {
   });
 };
 
-getIntIdGap('CatInfo').then((idGap) => { 
+getIntIdGap('Cat').then((idGap) => { 
   console.log('####### idGap of CatInfo #######')
   console.log(idGap);
 })

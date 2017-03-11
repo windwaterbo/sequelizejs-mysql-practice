@@ -13,7 +13,6 @@ db.Toys.findAll({
     },
     include: [{
       model: db.CatInfo,
-      // limit:1,
       attributes: ['id', 'nickName', 'year'],
       where: {
         id: db.Sequelize.col('CatToys.CatInfoId')

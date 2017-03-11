@@ -1,11 +1,9 @@
 require('rootpath')();
 const db = require('model');
 
-return db.CatInfo.destroy({
+return db.Cat.destroy({
   where: {
-    OwnerId: 1,
-    nickName: 'bubu',
-    CatId: 1
+    id:5
   },
   // if your table state is paranoid, you has forced delete data.
   // force: true
@@ -16,3 +14,4 @@ return db.CatInfo.destroy({
     console.log('##### ohohohoho ######');
   }
   });
+
